@@ -7,7 +7,7 @@ dotenv.config();
 
 const router = Router();
 
-const SYMBOLS = ['BTC', 'GOOG', 'ETH', 'SOL', 'XRP'];
+const SYMBOLS = ['BTC', 'GOOGL', 'ETH', 'SOL', 'XRP'];
 
 const COINHeader = {
     'Accept': 'application/json',
