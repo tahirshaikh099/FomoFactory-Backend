@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import mongoose, { ConnectOptions } from 'mongoose';
 import dotenv from 'dotenv';
 import pricesRouter from './routes/prices';
@@ -6,6 +7,9 @@ import pricesRouter from './routes/prices';
 dotenv.config();
 
 const app = express();
+
+// Enable CORS for all routes
+app.use(cors());
 
 const connectDB = async () => {
     try {
